@@ -22,6 +22,7 @@ html {
     font-family: 'Inter', sans-serif;
     position: sticky;
     top: 0;
+    z-index: 9999;
 }
 
 nav {
@@ -61,6 +62,7 @@ body {
     background: linear-gradient(to top, #ffffff, #d4d0bf);
     background-attachment: fixed;
     font-family: 'Inter', sans-serif;
+    width: 100%;
 }
 
 .herohome {
@@ -115,6 +117,8 @@ body {
 .about-section {
     padding: 100px 5%;
     background-color: transparent;
+    border-top: 1px solid #d4d0bf;
+    border-bottom: 1px solid #d4d0bf;
 }
 
 .about-content p {
@@ -136,10 +140,14 @@ body {
     padding: 50px;
     border-radius: 40px;
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: fadein ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
 }
 
 .right-hero:hover, .left-hero:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
+    transform: scale(1.05);
     background-color: #d8d8bc;
 }
 
@@ -173,4 +181,21 @@ footer {
     text-align: center;
     border-top: 1px solid #d4d0bf;
     color: #888;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media screen and (max-width: 763px) {
+    .main-left {
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+
+    }
+    .main-text {
+        font-size: 1rem;
+    }
 }
