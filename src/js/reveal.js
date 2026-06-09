@@ -11,6 +11,7 @@ gsap.from(rightHero, {
     }, 
     opacity: 0,
     y: 50,
+    delay: 0.5,
     duration: 1,
     ease: "power2.out"
 });
@@ -24,6 +25,7 @@ gsap.from(leftHero, {
     }, 
     opacity: 0,
     y: 50,
+    delay: 0.5,
     duration: 1,
     ease: "power2.out"
 });
