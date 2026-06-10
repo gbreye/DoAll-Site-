@@ -161,11 +161,18 @@ nav ul li a:hover {
 }
 
 #services { 
-    padding: 80px 5%; 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-    gap: 30px; 
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    gap: 40px;
 } 
+
+#services h2 { 
+    font-family: "Libre Baskerville", serif; 
+    font-size: 3.5rem; 
+    letter-spacing: -4px; 
+    color: #000; 
+}
 
 .right-hero, .left-hero { 
     background-color: var(--background-color-secondary); 
@@ -178,6 +185,13 @@ nav ul li a:hover {
     transform: translateY(-20px) scale(1.05); 
     background-color: #d8d8bc; 
 } 
+
+.items-services {
+    padding: 80px 5%; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 30px;  
+}
 
 .carrousel { 
     display: flex; 
