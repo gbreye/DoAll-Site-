@@ -13,7 +13,6 @@ for(let i = 0; i < carrousel.children.length; i++) {
         }, 
         opacity: 0,
         y: 50,
-        delay: 0.5,
         duration: 1,
         ease: "power2.out"
     });
