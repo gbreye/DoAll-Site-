@@ -124,8 +124,7 @@ nav ul li a:hover {
     display: flex; 
     flex-direction: column; 
     align-items: flex-start; 
-    animation: reveal 1s ease;
-
+    
 } 
 
 .section-header h2, .hero-header h2 { 
@@ -141,6 +140,7 @@ nav ul li a:hover {
     background-color: #d8d8bc;
     border-top: 1px solid #d4d0bf; 
     border-bottom: 1px solid #d4d0bf; 
+    border-radius: 30px 30px 0 0;
 } 
 
 .about-content p { 
