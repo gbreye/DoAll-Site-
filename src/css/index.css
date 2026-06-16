@@ -86,15 +86,120 @@ nav ul li a:hover {
 
 } 
 
+.right-area {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.noteMain {
+    padding: 20px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 400;
+    background-color: rgb(199, 198, 180);
+    margin: 20px;
+    border-radius: 30px;
+    text-wrap: wrap;
+    width: auto;
+    height: auto;
+    overflow-wrap: break-word;
+    color: rgb(54, 54, 54);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+    font-size: 30px;
+}
+
+#notes {
+    padding: 10px;
+    width: 100%;
+    text-wrap: wrap;
+    overflow:auto;
+}
+
+
+.left-area {
+    display: flex;
+    flex-direction: column;  
+    background-color: rgb(218, 217, 205);
+    padding: 20px;
+    width: auto;
+    height: 50%;
+    border-radius: 30px;
+    border: 2px solid rgba(32, 32, 32, 0.164);
+}
+
+.app-simulation {
+    background-color:rgb(218, 217, 205);
+    padding: 50px;
+    border-radius: 30px;
+    width: 500px;
+    height: 700px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 50%;
+}
+
+#input {
+    border: none;
+    background-color: rgb(218, 217, 205);
+    border-radius: 30px;
+    resize: none;
+    height: 100%;
+    color: rgb(54, 54, 54);
+    font-family: 'Libre Baskerville', serif;
+    border: 2px solid rgba(32, 32, 32, 0.164);
+    padding: 30px;
+}
+
+#input:focus {
+    outline: none;
+}
+
+input {
+    border: none;
+    padding: 20px;
+    background: #151515;
+    background: linear-gradient(to top,rgba(105, 105, 105, 1) 0%, rgba(48, 48, 48, 1) 100%);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.input:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
 .herohome { 
     display: flex; 
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: row; 
+    align-items: center;
     padding: 5%; 
-    justify-content: center; 
+    justify-content: space-between; 
     height: 100vh; 
     font-size: xx-large; 
 } 
+
+
 
 .main-span { 
     color: #000000; 
