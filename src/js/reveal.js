@@ -3,8 +3,7 @@ const mainright = document.querySelector('.main-right');
 const rightHero = document.querySelector('.right-hero');
 const leftHero = document.querySelector('.left-hero');
 const carrousel = document.querySelector('.carrousel');
-const appsimulation = document.querySelector('.app-simulation')
-appsimulation.preventDefault;
+
 
 
 gsap.fromTo(mainleft, {
