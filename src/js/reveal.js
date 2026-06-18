@@ -5,7 +5,8 @@ const leftHero = document.querySelector('.left-hero');
 const carrousel = document.querySelector('.carrousel');
 const navlinks = document.querySelector('.main-navlinks')
 const hamburger = document.querySelector('.hamburger-menu');
-
+/* script puramente visual usando o gsap*/
+/* verifica o click do hamburguer menu */
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active'); 
      if(hamburger.classList.contains('active')) {
@@ -32,6 +33,7 @@ hamburger.addEventListener('click', () => {
 
 });
 
+/* amimações do gsap */
 gsap.fromTo(mainleft, {
     filter: "blur(10px)",
     opacity: 0,

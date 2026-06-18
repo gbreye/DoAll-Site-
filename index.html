@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <title>DoAll</title>
 </head>
 <body>
+
     <header class="main-header">
         <nav>
             <div class="logo">
@@ -33,13 +33,28 @@
               </div>
         </nav>
     </header>
+
     <main>
+        /* capa */
         <section id="home" class="herohome">
             <div class="main-left">
                 <h1><span class="main-span">Welcome</span> to DoAll.</h1>
                 <p class="main-text">Your one-stop solution for all your needs.</p>
                 <p class="main-text">Your all in notes app!</p>
                 <button class="cta-button">Get Started</button>
+            </div>
+            <div class="main-right">
+                <figure>
+                    <img id = "img-notes" src="assets/notes.png" alt="imagem do preview do app"
+                    width="450px"
+                    height="741px">
+                    <img id = "img-calculator" src="assets/calculator.png" alt=""
+                    width="450px"
+                    height="741px">
+                    <img id = "img-calendar" src="assets/calendario.png" alt=""
+                    width="450px"
+                    height="741px">
+                </figure>
             </div>
         </section>
 
@@ -51,6 +66,7 @@
                 <p>DoAll. is made for those who want a fast, easy and custom enviroment to add custom notes, make your calc's and set your exam dates in our Calendar, all in one easy WebApp! </p>
             </div>
         </section>
+
         <section id="features" class="features-section">
             <header class="section-header">
                 <h2>Our Features</h2>
@@ -65,11 +81,13 @@
                     <div class = "items" >
                         <div class="carrousel-item">
                             <article>
+                                <i class="fa-solid fa-clipboard"></i>
                                 <h2>Note Taking</h2>
                             </article>
                         </div>
                         <div class="carrousel-item">
                             <article>
+                                <i class="fa-solid fa-calendar-days"></i>
                                 <h2>Calendar</h2>
                             </article>
                         </div>
@@ -97,7 +115,7 @@
                                 <h2>Organization</h2>
                             </article>
                         </div>
-                    </div>
+                    </div> 
                       <div class = "items" >
                         <div class="carrousel-item">
                             <article>
@@ -139,6 +157,7 @@
                 </div>
             </div>
         </section>
+
         <section id="services">
             <div class="items-services">
                 <div class="right-hero">
@@ -156,16 +175,30 @@
             <header class="hero-header"><h2>Get In Touch</h2></header>
             <div class="contact-container">
                 <p>Ready to start your next project? Reach out to us today.</p>
-                <form class="contact-form">
-                    <input type="email" placeholder="Your Email Address" required>
+                <form id = emailform class="contact-form">
+                    <input id = "email" type="email" placeholder="Your Email Address" required>
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
             </div>
         </section>
+
     </main>
+
     <script type="module" src="src/js/reveal.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "52QHN6kqb3hl6P0BU", /* OBS: tenho limite de requisições mas ta funcionando pode testar, provavelmente o email vai ir pro spam:( */
+        });
+    })();
+    </script>
+
+    <script src="src/js/email.js"></script>
 </body>
 <footer>
-        <p>&copy; 2024 DoAll. All rights reserved.</p>
+        <p>&copy; 2026 DoAll. All rights reserved.</p>
     </footer>
 </html>
