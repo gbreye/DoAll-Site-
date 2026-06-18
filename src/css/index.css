@@ -4,7 +4,7 @@
     --background-color-secondary: #E1E1CC; 
 } 
 
-
+/*começo*/
 * { 
     margin: 0; 
     padding: 0; 
@@ -27,6 +27,8 @@ body {
     font-family: 'Inter', sans-serif; 
 } 
 
+/*começo*/
+/*header*/
 .main-header { 
     background-color: var(--background-color); 
     backdrop-filter: blur(10px); 
@@ -112,6 +114,8 @@ nav ul li a:hover {
     transform: translateY(-11px) rotate(-45deg);
   }
   
+  /*header*/
+  /*capa*/
 .herohome { 
     display: flex; 
     flex-direction: row; 
@@ -198,6 +202,9 @@ nav ul li a:hover {
     color: #000; 
 } 
 
+/*capa*/
+/*seção about*/
+
 .about-section { 
     padding: 100px 5%; 
     background-color: #d8d8bc;
@@ -212,7 +219,8 @@ nav ul li a:hover {
     max-width: 900px; 
     color: #2c2c2c; 
 } 
-
+/*seção about*/
+/*seção habilidades do programa*/
 .features-section {
     padding: 100px 0 100px 5%;
 }
@@ -261,6 +269,8 @@ nav ul li a:hover {
     justify-content: space-evenly;
 }
 
+/*lógica carrosel*/
+
 .carrousel { 
     display: flex; 
     width: max-content; 
@@ -305,8 +315,9 @@ nav ul li a:hover {
     transform: scale(1.025);
     z-index: 1000;
 } 
-
-
+/*lógica carrosel*/
+/*seção habilidades do programa*/
+/*contatos*/
 .contact-section { 
     padding: 100px 5%; 
 } 
@@ -330,14 +341,16 @@ nav ul li a:hover {
     background: rgba(255, 255, 255, 0.6); 
     font-family: 'Inter', sans-serif; 
 } 
-
+/*contatos*/
+/*footer*/
 footer { 
     padding: 60px 5%; 
     text-align: center; 
     border-top: 1px solid #d4d0bf; 
     color: #888; 
 } 
-
+/*footer*/
+/*keyframes utilizados*/
 @keyframes carrousel { 
     from { 
         transform: translateX(0); 
@@ -357,7 +370,9 @@ footer {
         transform: translateY(0);
     }
 }
-
+/*keyframes utilizados*/
+/*dois media queries para melhor responsividade do site*/
+/*esse aqui para pc e tv box e tbm monitores quadrados*/
 @media screen and (min-width: 763px) and (max-width: 1200px) {
     .main-left { 
         position: absolute;
@@ -457,6 +472,7 @@ footer {
     }
 }
 
+/*esse aqui já pra celulares*/
 @media screen and (max-width: 763px) { 
     .main-left { 
         position: absolute;
