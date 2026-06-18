@@ -69,8 +69,11 @@ nav ul {
     list-style: none; 
     display: flex; 
     gap: 20px; 
-    transition: display 0.4s allow-discrete, opacity 0.4s, transform 0.4s;
 } 
+
+nav.ul.active {
+
+}
 
 nav ul li a { 
     color: #333; 
@@ -340,23 +343,34 @@ footer {
     .hamburger-menu {
         display: flex;
     }
-    nav ul {
+    
+
+    .main-navlinks {
     position: absolute;
     top: 110%;
     left: 50%;
     transform: translateX(-50%);
 
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 20px;
     width: 90%;
     padding: 20px;
+    opacity: 0;
 
     background-color: #F2F2E9;
     border-radius: 30px;
     box-shadow: 1px 1px 10px var(--color-shadow);
-    transition: display 0.4s allow-discrete, opacity 0.4s, transform 0.4s;
+    transition: 0.3s ease;
     }
+
+    .main-navlinks.active {
+        opacity: 1;
+        transition: 0.3s ease;
+    }
+
+
+
 
     .herohome {
         align-items: center;
